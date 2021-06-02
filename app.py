@@ -11,6 +11,9 @@ def hello_world():
 def hello(name: str):
     return f'Hello {name}'
 
+@app.route('/goodbye/<string:name>')
+def hello(name: str):
+    return f'Goodbye {name}'
 
 if __name__ == '__main__':
     app.run()
